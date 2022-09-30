@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import Header from '../components/Header';
+import WalletForm from '../components/WalletForm';
 
 class Wallet extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class Wallet extends React.Component {
     return (
       <div>
         <Header />
+        <WalletForm />
         <p data-testid="email-field">{email}</p>
         <div>
           <p data-testid="total-field">0</p>
