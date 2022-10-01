@@ -56,7 +56,7 @@ class WalletForm extends Component {
         <label htmlFor="value-input">
           <input
             data-testid="value-input"
-            type="text"
+            type="number"
             name="expensesText"
             placeholder="Valor"
             onChange={ this.handleChange }
