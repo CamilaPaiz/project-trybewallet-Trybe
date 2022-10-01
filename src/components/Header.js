@@ -45,3 +45,5 @@ Header.propTypes = {
 }.isRequired;
 
 export default connect(mapStateToProps)(Header);
+
+// requisito 4 realizado com ajuda do colega Felipe Pinto

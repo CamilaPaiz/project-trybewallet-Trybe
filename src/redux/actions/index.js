@@ -4,6 +4,7 @@ export const ADD_EMAIL = 'ADD_EMAIL';
 export const REQUEST_API = 'REQUEST_API';
 export const REQUEST_API_SUCESS = 'REQUEST_API_SUCESS';
 export const REQUEST_API_SUCESS_EXPENSES = 'REQUEST_API_SUCESS_EXPENSES,';
+export const REQUEST_FAILURE = 'REQUEST_FAILURE';
 
 // actions creators
 
@@ -26,6 +27,11 @@ export const requestApiSucessExpenses = (payload) => ({
   expenses: payload,
 });
 
+export const receiveFailure = (error) => ({
+  type: REQUEST_FAILURE,
+  error,
+});
+
 // função thunk para requisição de api para tipos de moeda
 
 export const getRequestApi = () => async (dispatch) => {
@@ -39,7 +45,11 @@ export const getRequestApi = () => async (dispatch) => {
 // função thunk para requisição de api para expenses
 export const getRequestApiExpenses = (state) => async (dispatch) => {
   dispatch(requestApi());
-  const response = await fetch('https://economia.awesomeapi.com.br/json/all');
-  const data = await response.json();
-  return dispatch(requestApiSucessExpenses({ ...state, exchangeRates: data }));
+  try {
+    const response = await fetch('https://economia.awesomeapi.com.br/json/all');
+    const data = await response.json();
+    dispatch(requestApiSucessExpenses({ ...state, exchangeRates: data }));
+  } catch (error) {
+    dispatch(receiveFailure(error));
+  }
 };
