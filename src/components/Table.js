@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { deletedTableItem } from '../redux/actions';
 
 class Table extends Component {
+  handleClick = (id) => {
+    const { expenses, dispatch } = this.props;
+    const filter = expenses.filter((item) => item.id !== id);
+    dispatch(deletedTableItem(filter));
+  };
+
   render() {
     const { expenses } = this.props;
     return (
@@ -24,7 +31,7 @@ class Table extends Component {
           <tbody>
 
             {
-              expenses.map((item, index) => {
+              expenses.map((item) => {
                 const valueInput = Number(item.value);
                 const valueInputFixed = valueInput.toFixed(2);
                 const exchangeRate = Number(item.exchangeRates[item.currency].ask)
@@ -35,7 +42,7 @@ class Table extends Component {
                 const currencyInputFixed = currencyInput.toFixed(2);
 
                 return (
-                  <tr key={ index }>
+                  <tr key={ item.id }>
                     <td>{item.description}</td>
                     <td>{item.tag}</td>
                     <td>{item.method}</td>
@@ -44,21 +51,22 @@ class Table extends Component {
                     <td>{ exchangeRateFixed }</td>
                     <td>{ currencyInputFixed}</td>
                     <td>Real</td>
-                    {/*  <td>
-                      <button
+                    <td>
+                      {/* <button
                         data-testid="edit-btn"
                         type="button"
                       >
                         Editar
-                      </button>
+                      </button> */}
                       <button
                         data-testid="delete-btn"
                         type="button"
+                        onClick={ () => this.handleClick(item.id) }
                       >
                         Excluir
 
                       </button>
-                    </td> */}
+                    </td>
                   </tr>
                 );
               })

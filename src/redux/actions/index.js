@@ -5,6 +5,7 @@ export const REQUEST_API = 'REQUEST_API';
 export const REQUEST_API_SUCESS = 'REQUEST_API_SUCESS';
 export const REQUEST_API_SUCESS_EXPENSES = 'REQUEST_API_SUCESS_EXPENSES,';
 export const REQUEST_FAILURE = 'REQUEST_FAILURE';
+export const DELETED_TABLE_ITEM = 'DELETED_TABLE_ITEM';
 
 // actions creators
 
@@ -30,6 +31,11 @@ export const requestApiSucessExpenses = (payload) => ({
 export const receiveFailure = (error) => ({
   type: REQUEST_FAILURE,
   error,
+});
+
+export const deletedTableItem = (payload) => ({
+  type: DELETED_TABLE_ITEM,
+  payload,
 });
 
 // função thunk para requisição de api para tipos de moeda
