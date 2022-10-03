@@ -6,6 +6,7 @@ export const REQUEST_API_SUCESS = 'REQUEST_API_SUCESS';
 export const REQUEST_API_SUCESS_EXPENSES = 'REQUEST_API_SUCESS_EXPENSES,';
 export const REQUEST_FAILURE = 'REQUEST_FAILURE';
 export const DELETED_TABLE_ITEM = 'DELETED_TABLE_ITEM';
+export const EDIT_TABLE = 'EDIT_TABLE';
 
 // actions creators
 
@@ -35,6 +36,11 @@ export const receiveFailure = (error) => ({
 
 export const deletedTableItem = (payload) => ({
   type: DELETED_TABLE_ITEM,
+  payload,
+});
+
+export const editTable = (payload) => ({
+  type: EDIT_TABLE,
   payload,
 });
 

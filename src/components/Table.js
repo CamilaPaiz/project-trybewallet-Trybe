@@ -52,12 +52,12 @@ class Table extends Component {
                     <td>{ currencyInputFixed}</td>
                     <td>Real</td>
                     <td>
-                      {/* <button
+                      <button
                         data-testid="edit-btn"
                         type="button"
                       >
                         Editar
-                      </button> */}
+                      </button>
                       <button
                         data-testid="delete-btn"
                         type="button"
