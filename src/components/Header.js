@@ -19,16 +19,31 @@ class Header extends Component {
     const { email } = this.props;
     return (
       <div>
-        <p data-testid="email-field">{email}</p>
+        <p
+          className="header-email"
+          data-testid="email-field"
+        >
+          {email}
+
+        </p>
         <div>
-          <p data-testid="total-field">
+          <p
+            className="total-field"
+            data-testid="total-field"
+          >
             { this.sumCalculation() }
 
           </p>
         </div>
-        <div>
-          <p data-testid="header-currency-field">BRL</p>
-        </div>
+
+        <p
+          className="header-currency-field"
+          data-testid="header-currency-field"
+        >
+          BRL
+
+        </p>
+
       </div>
     );
   }

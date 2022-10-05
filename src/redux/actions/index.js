@@ -4,9 +4,10 @@ export const ADD_EMAIL = 'ADD_EMAIL';
 export const REQUEST_API = 'REQUEST_API';
 export const REQUEST_API_SUCESS = 'REQUEST_API_SUCESS';
 export const REQUEST_API_SUCESS_EXPENSES = 'REQUEST_API_SUCESS_EXPENSES,';
-export const REQUEST_FAILURE = 'REQUEST_FAILURE';
+/* export const REQUEST_FAILURE = 'REQUEST_FAILURE'; */
 export const DELETED_TABLE_ITEM = 'DELETED_TABLE_ITEM';
 export const EDIT_TABLE = 'EDIT_TABLE';
+export const EDIT_FINISHED = 'EDIT_FINISHED';
 
 // actions creators
 
@@ -29,18 +30,23 @@ export const requestApiSucessExpenses = (payload) => ({
   expenses: payload,
 });
 
-export const receiveFailure = (error) => ({
+/* export const receiveFailure = (error) => ({
   type: REQUEST_FAILURE,
   error,
-});
+}); */
 
 export const deletedTableItem = (payload) => ({
   type: DELETED_TABLE_ITEM,
   payload,
 });
 
-export const editTable = (payload) => ({
+export const editTable = (id) => ({
   type: EDIT_TABLE,
+  id,
+});
+
+export const editFinished = (payload) => ({
+  type: EDIT_FINISHED,
   payload,
 });
 
@@ -57,11 +63,9 @@ export const getRequestApi = () => async (dispatch) => {
 // função thunk para requisição de api para expenses
 export const getRequestApiExpenses = (state) => async (dispatch) => {
   dispatch(requestApi());
-  try {
-    const response = await fetch('https://economia.awesomeapi.com.br/json/all');
-    const data = await response.json();
-    dispatch(requestApiSucessExpenses({ ...state, exchangeRates: data }));
-  } catch (error) {
-    dispatch(receiveFailure(error));
-  }
+  const response = await fetch('https://economia.awesomeapi.com.br/json/all');
+  const data = await response.json();
+  dispatch(requestApiSucessExpenses({ ...state, exchangeRates: data }));
 };
+
+// função thunk para editar ?

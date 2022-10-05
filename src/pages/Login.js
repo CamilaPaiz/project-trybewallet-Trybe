@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+/* import './Wallet.css'; */
 import { connect } from 'react-redux';
-import { addEmail, getRequestApi } from '../redux/actions';
+import { addEmail } from '../redux/actions';
 
 class Login extends React.Component {
   state = {
@@ -29,35 +29,45 @@ class Login extends React.Component {
     const { history, dispatch } = this.props;
     const { email } = this.state;
     dispatch(addEmail(email));
-    dispatch(getRequestApi());
     history.push('/carteira');
   };
 
   render() {
     const { isDisabled } = this.state;
     return (
-      <div>
-        <label htmlFor="email-input">
-          E-mail
-          <input
-            type="text"
-            name="email"
-            data-testid="email-input"
-            onChange={ this.handleChange }
+      <div className="login-itens">
+        <h2 className="login-text">Wallet</h2>
+        {/*  <label
+          className="email-label"
+          htmlFor="email-input"
+        > */}
+        {/*  E-mail */}
+        <input
+          placeholder="E-mail"
+          className="email-input"
+          type="text"
+          name="email"
+          data-testid="email-input"
+          onChange={ this.handleChange }
+        />
+        {/*  </label> */}
+        {/*  <label
+          className="password-label"
+          htmlFor="password-input"
+        >
+          Senha */}
+        <input
+          placeholder="Senha"
+          className="password-input"
+          type="text"
+          name="password"
+          data-testid="password-input"
+          onChange={ this.handleChange }
 
-          />
-        </label>
-        <label htmlFor="password-input">
-          Senha
-          <input
-            type="text"
-            name="password"
-            data-testid="password-input"
-            onChange={ this.handleChange }
-
-          />
-        </label>
+        />
+        {/*  </label> */}
         <button
+          className="button-entrar"
           type="button"
           disabled={ isDisabled }
           onClick={ this.handleClick }

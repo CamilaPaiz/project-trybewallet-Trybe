@@ -1,12 +1,14 @@
 // Esse reducer será responsável por tratar o todas as informações relacionadas as despesas
 
 import { DELETED_TABLE_ITEM,
-  /* EDIT_TABLE, */
+  EDIT_TABLE, EDIT_FINISHED,
   REQUEST_API, REQUEST_API_SUCESS, REQUEST_API_SUCESS_EXPENSES } from '../actions';
 
 const INITIAL_STATE = {
   currencies: [],
   expenses: [],
+  idToEdit: 0,
+  editor: false,
 };
 
 const wallet = (state = INITIAL_STATE, action) => {
@@ -29,11 +31,26 @@ const wallet = (state = INITIAL_STATE, action) => {
       ...state,
       expenses: action.payload,
     };
-  /*  case EDIT_TABLE:
+  case EDIT_TABLE:
     return {
       ...state,
-      expenses: action.payload,
-    }; */
+      idToEdit: action.id,
+      editor: true,
+    };
+  case EDIT_FINISHED:
+    console.log(action.payload, 'despesa editada');
+    return {
+      ...state,
+      editor: false,
+      expenses: state.expenses.map((item) => {
+        if (item.id === state.idToEdit) {
+          return {
+            ...action.payload, id: item.id, exchangeRates: item.exchangeRates,
+          };
+        }
+        return item;
+      }),
+    };
   default:
     return state;
   }

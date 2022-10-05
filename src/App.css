@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -27,9 +27,10 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+
+/* @keyframes App-logo-spin {
 
   from {
     transform: rotate(0deg);
@@ -38,4 +39,534 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body {
+  background-color: #e1e5eb;
+}
+
+.email-input {
+  background: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  left: 475px;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-align: center;
+  top: 360px;
+  width: 330px;
+}
+
+.password-input {
+  background: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  left: 475px;
+  margin-left: 100px;
+  text-align: center;
+  top: 410px;
+  width: 330px;
+}
+
+.button-entrar {
+  background: #2fc18c;
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  height: 40px;
+  left: 475px;
+  margin-left: 100px;
+  top: 460px;
+  width: 330px;
+}
+
+.button-entrar:hover {
+  color: greenyellow;
+}
+
+.login-text {
+  color: whitesmoke;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.login-itens {
+  background: #003be5;
+  border-radius: 10px;
+  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+  height: 356px;
+  left: 377px;
+  margin-left: 150px;
+  position: absolute;
+  top: 201px;
+  width: 525px;
+}
+
+/*  // Form  */
+.form-content {
+  background: rgba(225, 229, 235, 0.49);
+  border-radius: 5px;
+  height: 70px;
+  left: 121px;
+  margin-left: 250px;
+  padding: 20px;
+  position: absolute;
+  top: 75px;
+  width: 850px;
+}
+
+.value-input {
+  border: 1px solid #003be5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 25px;
+  left: 275px;
+  margin-bottom: 10px;
+  top: 236px;
+  width: 80px;
+
+}
+
+.value-input-label {
+  height: 30px;
+  left: 232px;
+  margin-right: 80px;
+  top: 236px;
+  width: 460px;
+}
+
+.description-input-label {
+  height: 30px;
+  left: 232px;
+  top: 179px;
+  width: 460px;
+}
+
+.description-input {
+  border: 1px solid #003be5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 25px;
+  left: 403.14px;
+  top: 179px;
+  width: 200px;
+}
+
+.tag-input-label {
+  height: 30px;
+  left: 722px;
+  top: 179px;
+  width: 330px;
+}
+
+.tag-input {
+  border: 1px solid #003be5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 25px;
+  left: 403.14px;
+  top: 179px;
+  width: 200px;
+}
+
+
+.method-input-label {
+  height: 30px;
+  left: 463px;
+  margin-left: 25px;
+  top: 235px;
+  width: 350px;
+}
+
+.method-input {
+  border: 1px solid #003be5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 25px;
+  left: 638px;
+  top: 235px;
+  width: 200px;
+}
+
+.currency-input-label {
+  height: 30px;
+  left: 463px;
+  margin-left: 100px;
+  top: 235px;
+  width: 403px;
+}
+
+.currency-input {
+  border: 1px solid #003be5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 25px;
+  left: 638px;
+  top: 235px;
+  width: 80px;
+}
+
+.add-button {
+  background: #2fc18c;
+  border: 1px solid #2fc18c;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  height: 40px;
+  left: 250px;
+  position: absolute;
+  top: 200px;
+  width: 330px;
+}
+
+.add-button:hover {
+  color: black;
+}
+
+.form-header-box {
+  background: #003be5;
+  border-radius: 10px;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  height: 400px;
+  left: 121px;
+  margin-left: 290px;
+  margin-top: 20px;
+  top: -97px;
+  width: 1037px;
+}
+
+/* // header */
+.header-email {
+  align-items: center;
+  color: #2fc18c;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: 800px;
+  line-height: 14px;
+  margin-left: 250px;
+  position: absolute;
+  top: 30px;
+  width: 123px;
+
+}
+
+.total-field {
+  color: #2fc18c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  height: 14px;
+  left: 592px;
+  line-height: 14px;
+  margin-left: 150px;
+  position: absolute;
+  top: 30px;
+  width: 233px;
+
+}
+
+.header-currency-field {
+  color: #2fc18c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  height: 14px;
+  left: 592px;
+  line-height: 14px;
+  margin-left: 200px;
+  position: absolute;
+  top: 30px;
+  width: 233px;
+}
+
+/* Table */
+.table {
+
+  /*  background-color: #003be5; */
+  border-radius: 10px;
+  height: 129px;
+  left: 122px;
+  margin-left: 166px;
+  position: absolute;
+  top: 421px;
+  width: 1040px;
+
+}
+
+.table-wallet {
+  height: 129px;
+  left: 122px;
+  top: 421px;
+  width: 1040px;
+
+}
+
+.table-header {
+  background-color: #003be5;
+  border-radius: 10px;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  height: 53.2px;
+  left: 122.24px;
+  top: 421px;
+  width: 1035.38px;
+}
+
+.expenses-table {
+  height: 67.52px;
+  left: 124.31px;
+  top: 476.25px;
+  width: 998.69px;
+}
+
+.descricao {
+
+  /*  border-bottom: #003be5 2px solid;
+  border-right: #003be5 solid 2px; */
+  font-size: 16px;
+  font-weight: 700;
+  left: 122.24px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+
+}
+
+.tag {
+
+  /*  border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 237.79px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.method {
+
+  /*  border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 53.2px;
+  left: 353.35px;
+  line-height: 13px;
+  text-align: center;
+  top: 421px;
+  width: 110.93px;
+}
+
+.valor {
+
+  /* border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 468.91px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.moeda {
+
+  /*  border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 584.46px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.cambio {
+
+  /*   border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 700.02px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.valor-convertido {
+
+  /* border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 815.57px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.moeda-conversao {
+
+  /* border-bottom: #003be5 2px solid;
+  border-right: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 53.2px;
+  left: 931.13px;
+  line-height: 13px;
+  text-align: center;
+  top: 421px;
+  width: 110.93px;
+}
+
+.editar-excluir {
+
+  /*  border-bottom: #003be5 2px solid; */
+  font-size: 16px;
+  font-weight: 700;
+  height: 26.6px;
+  left: 1046.68px;
+  line-height: 13px;
+  text-align: center;
+  top: 434px;
+  width: 110.93px;
+}
+
+.descrip-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 124.31px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+
+}
+
+.tag-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 239.87px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.method-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 355.42px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.value-item {
+  border-bottom: #003be5 2px solid;
+  font-weight: 500;
+  height: 26.6px;
+  left: 470.98px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.moeda-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 586.53px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.exchangerate-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 702.09px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.currencyinput-item {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 817.64px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+.real {
+  border-bottom: #003be5 2px solid;
+  font-size: 16px;
+  font-weight: 500;
+  height: 26.6px;
+  left: 817.64px;
+  text-align: center;
+  top: 476.25px;
+  width: 110.93px;
+}
+
+
+.edita-button {
+  background: #2fc18c;
+  border-bottom: #003be5 2px solid;
+  bottom: 31.03%;
+  cursor: pointer;
+  left: 84.92%;
+  right: 13.88%;
+  top: 67.08%;
+}
+
+.edita-button:hover {
+  color: whitesmoke;
+}
+
+.exclui-button {
+  background: lightcoral;
+  bottom: 25.42%;
+  cursor: pointer;
+  left: 86.95%;
+  right: 12.27%;
+  top: 72.64%;
+}
+
+.exclui-button:hover {
+  color: whitesmoke;
 }
