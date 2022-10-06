@@ -42,16 +42,19 @@
 } */
 
 body {
-  background-color: #e1e5eb;
+  background-color: black;
 }
 
 .email-input {
   background: white;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
   height: 40px;
   left: 475px;
+  margin-bottom: 5px;
   margin-left: 100px;
   margin-top: 50px;
   text-align: center;
@@ -61,11 +64,14 @@ body {
 
 .password-input {
   background: white;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
   height: 40px;
   left: 475px;
+  margin-bottom: 5px;
   margin-left: 100px;
   text-align: center;
   top: 410px;
@@ -73,11 +79,13 @@ body {
 }
 
 .button-entrar {
-  background: #2fc18c;
-  border: 1px solid blue;
+  background: #003be5;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
-  color: whitesmoke;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
   height: 40px;
   left: 475px;
   margin-left: 100px;
@@ -86,20 +94,22 @@ body {
 }
 
 .button-entrar:hover {
-  color: greenyellow;
+  color: black;
 }
 
 .login-text {
-  color: whitesmoke;
+  color: black;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
   margin-top: 30px;
   text-align: center;
 
 }
 
-.login-itens {
-  background: #003be5;
+.login-itens {/*
+  background: #003be5; */
+  background-color: whitesmoke;
   border-radius: 10px;
-  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
   height: 356px;
   left: 377px;
   margin-left: 150px;
@@ -110,8 +120,12 @@ body {
 
 /*  // Form  */
 .form-content {
-  background: rgba(225, 229, 235, 0.49);
+
+  /*  background: rgba(225, 229, 235, 0.49); */
+  background: #003be5;
   border-radius: 5px;
+  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+  color: white;
   height: 70px;
   left: 121px;
   margin-left: 250px;
@@ -128,6 +142,7 @@ body {
   height: 25px;
   left: 275px;
   margin-bottom: 10px;
+  margin-left: 5px;
   top: 236px;
   width: 80px;
 
@@ -154,6 +169,7 @@ body {
   box-sizing: border-box;
   height: 25px;
   left: 403.14px;
+  margin-left: 5px;
   top: 179px;
   width: 200px;
 }
@@ -161,6 +177,7 @@ body {
 .tag-input-label {
   height: 30px;
   left: 722px;
+  margin-left: 5px;
   top: 179px;
   width: 330px;
 }
@@ -171,6 +188,7 @@ body {
   box-sizing: border-box;
   height: 25px;
   left: 403.14px;
+  margin-left: 5px;
   top: 179px;
   width: 200px;
 }
@@ -190,6 +208,7 @@ body {
   box-sizing: border-box;
   height: 25px;
   left: 638px;
+  margin-left: 5px;
   top: 235px;
   width: 200px;
 }
@@ -208,17 +227,18 @@ body {
   box-sizing: border-box;
   height: 25px;
   left: 638px;
+  margin-left: 5px;
   top: 235px;
   width: 80px;
 }
 
 .add-button {
-  background: #2fc18c;
+  background: #003be5;
   border: 1px solid #2fc18c;
   border-radius: 5px;
   box-sizing: border-box;
   color: whitesmoke;
-  height: 40px;
+  height: 35px;
   left: 250px;
   position: absolute;
   top: 200px;
@@ -230,10 +250,12 @@ body {
 }
 
 .form-header-box {
-  background: #003be5;
+
+  /*   background: #003be5; */
+  background-color: black;
   border-radius: 10px;
   box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
-  height: 400px;
+  height: 300px;
   left: 121px;
   margin-left: 290px;
   margin-top: 20px;
@@ -244,7 +266,7 @@ body {
 /* // header */
 .header-email {
   align-items: center;
-  color: #2fc18c;
+  color: #003be5;
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
@@ -261,7 +283,7 @@ body {
 }
 
 .total-field {
-  color: #2fc18c;
+  color: #003be5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -277,7 +299,7 @@ body {
 }
 
 .header-currency-field {
-  color: #2fc18c;
+  color: #003be5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -296,16 +318,20 @@ body {
 
   /*  background-color: #003be5; */
   border-radius: 10px;
+  color: white;
   height: 129px;
   left: 122px;
   margin-left: 166px;
   position: absolute;
-  top: 421px;
+
+  /* top: 421px; */
   width: 1040px;
 
 }
 
 .table-wallet {
+
+  /*  background-color: #003be5; */
   height: 129px;
   left: 122px;
   top: 421px;
@@ -314,7 +340,10 @@ body {
 }
 
 .table-header {
-  background-color: #003be5;
+
+  /*   background: #E1E5EB; */
+
+  /*  background-color: #003be5; */
   border-radius: 10px;
   box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
   height: 53.2px;
@@ -324,6 +353,8 @@ body {
 }
 
 .expenses-table {
+
+  /*  background-color: #003be5; */
   height: 67.52px;
   left: 124.31px;
   top: 476.25px;
@@ -332,8 +363,8 @@ body {
 
 .descricao {
 
-  /*  border-bottom: #003be5 2px solid;
-  border-right: #003be5 solid 2px; */
+  /*  border-bottom: #003be5 2px solid; */
+  border-right: #003be5 solid 2px;
   font-size: 16px;
   font-weight: 700;
   left: 122.24px;
@@ -346,8 +377,8 @@ body {
 
 .tag {
 
-  /*  border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /*   border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
@@ -360,8 +391,8 @@ body {
 
 .method {
 
-  /*  border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /* border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 53.2px;
@@ -374,8 +405,8 @@ body {
 
 .valor {
 
-  /* border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /*  border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
@@ -388,8 +419,8 @@ body {
 
 .moeda {
 
-  /*  border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /* border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
@@ -402,8 +433,8 @@ body {
 
 .cambio {
 
-  /*   border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /*   border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
@@ -416,8 +447,8 @@ body {
 
 .valor-convertido {
 
-  /* border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /*  border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
@@ -430,8 +461,8 @@ body {
 
 .moeda-conversao {
 
-  /* border-bottom: #003be5 2px solid;
-  border-right: #003be5 2px solid; */
+  /*  border-bottom: #003be5 2px solid; */
+  border-right: #003be5 2px solid;
   font-size: 16px;
   font-weight: 700;
   height: 53.2px;
@@ -444,7 +475,7 @@ body {
 
 .editar-excluir {
 
-  /*  border-bottom: #003be5 2px solid; */
+  /*    border-bottom: #003be5 2px solid;  */
   font-size: 16px;
   font-weight: 700;
   height: 26.6px;
