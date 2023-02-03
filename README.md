@@ -1,6 +1,6 @@
-# This was developed during the Trybe course
+# Project Trybewallet
 
-In this project a wallet to control expenses with currency converter was developed.
+In this project a wallet to control expenses with currency converter was developed by me.
 When using this application a user shoulde be able to :
 
 -Add,remove and edit expenses;
